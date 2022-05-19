@@ -14,8 +14,8 @@ def request(url, api_key)
     json = JSON.parse(respuesta.body) #transformar texto de respuesta a HASH
 end
 
-url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key="
-api_key = "qbCMbuRmNXwGpaBc9JFV0lXzly02DkR78JzFDYgQ"
+url = "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=10&api_key="
+api_key = "jOLeUmTthh5Kc1KLb9Bbc1tINATbtL6V2OdCQ8x8"
 respuesta_hash = request(url, api_key)
 
 File.open('output.html', "w") do |html|
